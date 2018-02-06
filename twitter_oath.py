@@ -23,7 +23,7 @@ resource_owner_secret = fetch_response.get('oauth_token_secret')
 # STEP 2: GET AUTHORIZATION FROM THE USER
 # Now we have "request privileges." What will we do with all that power?
 # We will send our user over to the service provider (Twitter, in this case)
-# to log in. After they do, Twitter will generate a special URL,
+# to log in. As part of this, Twitter will generate a special URL,
 # unique to this operation (THIS request for THIS user by THIS application).
 # Our application can then go to that URL to get the very special
 # verification token that we can use to retreive THIS user's data for use
